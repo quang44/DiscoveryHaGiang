@@ -1,0 +1,53 @@
+/* Đặt về mặc định các thẻ trong css */
+
+* {
+    font-family: 'Roboto';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input, select {
+    outline: 0;
+}
+
+button {
+    background: repeat;
+}
+
+ol,
+ul {
+    list-style: none;
+}

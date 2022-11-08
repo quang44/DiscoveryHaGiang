@@ -1,0 +1,983 @@
+.detail_ks_pro .title-circle {
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.detail_ks_pro .title-circle::before {
+  content: "";
+  width: 21px;
+  height: 13px;
+  border-radius: 30px 30px 0px 0px;
+  margin-right: 7px;
+  -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
+          transform: matrix(0, -1, -1, 0, 0, 0);
+  background: #0274B6;
+}
+.detail_ks_pro .title-circle h2 {
+  font-family: "Roboto bold";
+  text-transform: uppercase;
+  color: #333333;
+}
+.detail_ks_pro .products_about_us {
+  padding-bottom: 75px;
+}
+.detail_ks_pro .products_about_us .item-title {
+  margin: 0px 0 50px;
+  text-align: center;
+}
+.detail_ks_pro .products_about_us .item-title h1 {
+  font-family: "Roboto bold";
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.detail_ks_pro .products_about_us .item-title .maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.detail_ks_pro .products_about_us .item-title .maps svg {
+  color: var(--color1);
+}
+.detail_ks_pro .products_about_us .item-title .maps p {
+  margin-left: 6px;
+  color: #4F4F4F;
+}
+.detail_ks_pro .products_about_us .rolling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -25px;
+}
+.detail_ks_pro .products_about_us .item_product {
+  position: relative;
+  width: 50%;
+  max-width: 540px;
+  padding: 0 25px;
+  z-index: 1;
+}
+.detail_ks_pro .products_about_us .item_product::before {
+  position: absolute;
+  z-index: -1;
+}
+.detail_ks_pro .products_about_us .item_product .text {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.detail_ks_pro .products_about_us .item_product p {
+  text-align: justify;
+  color: #4F4F4F;
+  margin-bottom: 14px;
+}
+.detail_ks_pro .products_about_us .item_images {
+  position: relative;
+  width: 50%;
+  padding: 0 25px;
+}
+.detail_ks_pro .products_about_us .item_images::before {
+  position: absolute;
+  content: "";
+  width: 133px;
+  height: 133px;
+  right: -50px;
+  bottom: -50px;
+  border-radius: 50%;
+  border: 8px solid #F5CE8D;
+  opacity: 0.2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 0;
+}
+.detail_ks_pro .products_about_us .item_images::after {
+  position: absolute;
+  content: "";
+  width: 26.07px;
+  height: 26.07px;
+  left: -26px;
+  top: 20px;
+  background: #0274B6;
+  opacity: 0.3;
+  -webkit-transform: rotate(20.48deg);
+          transform: rotate(20.48deg);
+  z-index: 0;
+}
+.detail_ks_pro .products_about_us .item_images .video {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.detail_ks_pro .products_about_us .item_images .video img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+}
+.detail_ks_pro .products_about_us .item_images .video .play-video {
+  padding: 11px 17px;
+  position: absolute;
+  background: var(--white);
+  height: 41px;
+  width: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+.detail_ks_pro .products_about_us .item_images .video .play-video::before {
+  opacity: 0;
+  visibility: hidden;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  -webkit-animation: animationPlay infinite 1s linear;
+          animation: animationPlay infinite 1s linear;
+}
+.detail_ks_pro .products_about_us .item_images .video .play-video .svg-inline--fa.fa-w-14 {
+  color: var(--color1);
+  margin-left: 2px;
+  font-size: 16px;
+}
+@-webkit-keyframes animationPlay {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 0;
+  }
+}
+@keyframes animationPlay {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.detail_ks_pro .products_about_us .item_images .video:hover .play-video::before {
+  opacity: 1;
+  visibility: visible;
+}
+.detail_ks_pro .silde_traveler .single_traveler {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.detail_ks_pro .silde_traveler .single_traveler::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: rgba(9, 9, 9, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.detail_ks_pro .silde_traveler .single_traveler .banner {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.detail_ks_pro .silde_traveler .single_traveler .banner .thumbnail-img {
+  width: 100%;
+  padding-top: 60%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.detail_ks_pro .silde_traveler .single_traveler .banner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.detail_ks_pro .silde_traveler .single_traveler:hover .banner .thumbnail-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.detail_ks_pro .silde_traveler .owl-item.active .single_traveler::before {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.detail_ks_pro .silde_traveler .owl-dots {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.detail_ks_pro .silde_traveler .owl-dots .owl-dot {
+  background: #D9D9D9 !important;
+}
+.detail_ks_pro .silde_traveler .owl-dots .active {
+  background: var(--white) !important;
+}
+.detail_ks_pro .silde_traveler .owl-nav {
+  z-index: 2;
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-prev,
+.detail_ks_pro .silde_traveler .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  width: 35.05px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-prev span,
+.detail_ks_pro .silde_traveler .owl-nav button.owl-next span {
+  display: none;
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-prev::before,
+.detail_ks_pro .silde_traveler .owl-nav button.owl-next::before {
+  position: absolute;
+  line-height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-prev:hover,
+.detail_ks_pro .silde_traveler .owl-nav button.owl-next:hover {
+  opacity: 1;
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-prev {
+  left: 180px;
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-prev::before {
+  content: url("../../../../images/icon/prev_bann.png");
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-next {
+  right: 180px;
+}
+.detail_ks_pro .silde_traveler .owl-nav button.owl-next::before {
+  content: url("../../../../images/icon/next_bann.png");
+}
+.detail_ks_pro .item_utility {
+  padding: 75px 0;
+}
+.detail_ks_pro .item_utility .title-circle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.detail_ks_pro .item_utility .item_our .owl-stage-outer {
+  margin-bottom: 40px;
+}
+.detail_ks_pro .item_utility .item_our .single .thumbnail-images {
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.detail_ks_pro .item_utility .item_our .single .images {
+  width: 100%;
+  padding-top: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.detail_ks_pro .item_utility .item_our .single .images img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.detail_ks_pro .item_utility .item_our .single .detail h3 {
+  font-family: "Roboto bold";
+  color: #333333;
+  margin-bottom: 12px;
+}
+.detail_ks_pro .item_utility .item_our .single .detail p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #4F4F4F;
+}
+.detail_ks_pro .item_utility .item_our .single:hover .images {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.detail_ks_pro .item_utility .item_our .single:hover .detail h3 {
+  color: var(--color1);
+}
+.detail_ks_pro .kind_of_room {
+  position: relative;
+  padding: 75px 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 800px;
+}
+.detail_ks_pro .kind_of_room .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.detail_ks_pro .kind_of_room .bg img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-track {
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+  min-width: 671px;
+  max-width: 671px;
+  padding: 0 17px;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .single_slide .image_single {
+  width: 100%;
+  padding-top: 70%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .single_slide .image_single img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-active .single_slide .image_single {
+  width: 100%;
+  padding-top: 90%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev {
+  position: relative;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  top: 0;
+  left: 58%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev::before {
+  content: url("../../../images/icon/coolicon.png");
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev:hover, .detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev:focus {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev:hover::before, .detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev:focus::before {
+  content: url("../../../images/icon/active.png");
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-next {
+  position: relative;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  top: 0;
+  right: auto;
+  left: 59%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-next::before {
+  content: url("../../../images/icon/coolicon1.png");
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-next:hover, .detail_ks_pro .kind_of_room .slide_filing_pro .slick-next:focus {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.detail_ks_pro .kind_of_room .slide_filing_pro .slick-next:hover::before, .detail_ks_pro .kind_of_room .slide_filing_pro .slick-next:focus::before {
+  content: url("../../../images/icon/active1.png");
+}
+.detail_ks_pro .kind_of_room .title-circle h2 {
+  color: #FFFFFF;
+}
+.detail_ks_pro .kind_of_room .detail_pro_item {
+  width: 55%;
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing {
+  padding-right: 150px;
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content {
+  margin-bottom: 15px;
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content .title {
+  font-family: "Roboto bold";
+  color: #FFFFFF;
+  margin-bottom: 46px;
+  position: relative;
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content .title::before {
+  position: absolute;
+  content: url("../../../images/icon/frame-1.png");
+  right: -150px;
+  bottom: -100%;
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content p {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .list_text .flex-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .list_text .flex-list p {
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.649);
+}
+.detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .list_text .flex-list p.light {
+  font-family: "Roboto light";
+}
+.detail_ks_pro .contact_item {
+  padding: 75px 0;
+}
+.detail_ks_pro .contact_item .html_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.detail_ks_pro .contact_item .bann-contact {
+  width: 50%;
+  line-height: 0;
+}
+.detail_ks_pro .contact_item .bann-contact img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detail_ks_pro .contact_item .col-contact {
+  width: 50%;
+  padding: 95px 15px 95px 50px;
+  position: relative;
+  z-index: 1;
+}
+.detail_ks_pro .contact_item .col-contact::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--color1);
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.detail_ks_pro .contact_item .title-circle {
+  margin-bottom: 40px;
+}
+.detail_ks_pro .contact_item .title-circle::before {
+  background: #FFFFFF;
+}
+.detail_ks_pro .contact_item .title-circle h2 {
+  color: #FFFFFF;
+}
+.detail_ks_pro .contact_item .products h2 {
+  font-family: "Roboto bold";
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+.detail_ks_pro .contact_item .address_information .info_item {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+}
+.detail_ks_pro .contact_item .address_information .info_item:last-child {
+  margin-bottom: 0;
+}
+.detail_ks_pro .contact_item .address_information .info_item .icon {
+  height: 45px;
+  min-width: 45px;
+  max-width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+}
+.detail_ks_pro .contact_item .address_information .info_item .info-text {
+  padding-left: 19px;
+}
+.detail_ks_pro .contact_item .address_information .info_item .info-text h3 {
+  font-family: "Roboto bold";
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 5px;
+}
+.detail_ks_pro .contact_item .address_information .info_item .info-text p {
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.85);
+}
+.detail_ks_pro .product_other_hotel {
+  padding: 75px 0;
+}
+.detail_ks_pro .product_other_hotel h2 {
+  font-family: "Roboto bold";
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1399px) {
+  .detail_ks_pro .kind_of_room {
+    min-height: 740px;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro {
+    width: 54%;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 600px;
+    max-width: 600px;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev {
+    left: 64%;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-next {
+    left: 66%;
+  }
+}
+@media (max-width: 1199px) {
+  .detail_ks_pro .products_about_us {
+    padding-bottom: 60px;
+  }
+  .detail_ks_pro .products_about_us .item-title {
+    margin: 0 0 40px ;
+  }
+  .detail_ks_pro .silde_traveler .owl-nav .owl-prev {
+    left: 100px;
+  }
+  .detail_ks_pro .silde_traveler .owl-nav .owl-next {
+    right: 100px;
+  }
+  .detail_ks_pro .silde_traveler .owl-dots {
+    bottom: 20px;
+  }
+  .detail_ks_pro .kind_of_room {
+    min-height: 700px;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro {
+    width: 52%;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-track {
+    margin-bottom: 20px;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 540px;
+    max-width: 540px;
+    padding: 0 12px;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-arrow {
+    zoom: 0.9;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-prev {
+    left: 74%;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-next {
+    left: 75%;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing {
+    padding-right: 100px;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content .title::before {
+    right: -100px;
+  }
+  .detail_ks_pro .contact_item .bann-contact {
+    width: 40%;
+  }
+  .detail_ks_pro .contact_item .col-contact {
+    width: 60%;
+    padding: 75px 15px 75px 30px;
+  }
+  .detail_ks_pro .contact_item .col-contact .title-circle {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .detail_ks_pro .title-circle {
+    margin-bottom: 20px;
+  }
+  .detail_ks_pro .products_about_us .item-title {
+    margin: 0px 0 30px;
+  }
+  .detail_ks_pro .products_about_us .item-title h1 {
+    margin-bottom: 10px;
+  }
+  .detail_ks_pro .products_about_us .rolling {
+    margin: 0 -15px;
+  }
+  .detail_ks_pro .products_about_us .item_product {
+    padding: 0 15px;
+  }
+  .detail_ks_pro .products_about_us .item_product p {
+    margin-bottom: 10px;
+  }
+  .detail_ks_pro .products_about_us .item_images {
+    padding: 0 15px;
+  }
+  .detail_ks_pro .silde_traveler .owl-nav .owl-prev {
+    left: 60px;
+    zoom: 0.9;
+  }
+  .detail_ks_pro .silde_traveler .owl-nav .owl-next {
+    right: 60px;
+    zoom: 0.9;
+  }
+  .detail_ks_pro .item_utility {
+    padding: 60px 0;
+  }
+  .detail_ks_pro .kind_of_room {
+    min-height: 600px;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 460px;
+    max-width: 460px;
+    padding: 0 8px;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-arrow {
+    zoom: 0.8;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing {
+    padding-right: 70px;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content .title::before {
+    right: -70px;
+  }
+  .detail_ks_pro .contact_item {
+    padding: 60px 0;
+  }
+  .detail_ks_pro .contact_item .bann-contact {
+    width: 30%;
+  }
+  .detail_ks_pro .contact_item .col-contact {
+    width: 70%;
+    padding: 60px 15px 60px 30px;
+  }
+  .detail_ks_pro .product_other_hotel {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 888px) {
+  .detail_ks_pro .kind_of_room {
+    padding: 60px 0;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .detail_ks_pro .products_about_us .item-title {
+    margin: 0px 0 20px;
+  }
+  .detail_ks_pro .products_about_us .item_product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .detail_ks_pro .products_about_us .item_images {
+    width: 100%;
+  }
+  .detail_ks_pro .silde_traveler .owl-nav .owl-prev {
+    left: 10px;
+    zoom: 0.8;
+  }
+  .detail_ks_pro .silde_traveler .owl-nav .owl-next {
+    right: 10px;
+    zoom: 0.8;
+  }
+  .detail_ks_pro .item_utility {
+    padding: 40px 0;
+  }
+  .detail_ks_pro .product_other_hotel {
+    padding: 40px 0;
+  }
+  .detail_ks_pro .kind_of_room {
+    padding: 40px 0;
+    min-height: auto;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro {
+    position: relative;
+    width: 100%;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .slick-track {
+    margin: 10px 0 30px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item {
+    width: 100%;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing {
+    padding-right: 0;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content .title::before {
+    right: 0;
+  }
+  .detail_ks_pro .contact_item {
+    padding: 40px 0;
+  }
+  .detail_ks_pro .contact_item .col-contact {
+    width: 70%;
+    padding: 40px 15px 40px 20px;
+  }
+  .detail_ks_pro .product_other_hotel h2 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 400px;
+    max-width: 400px;
+  }
+  .detail_ks_pro .contact_item {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .detail_ks_pro .contact_item .html_flex {
+    margin: 0 -15px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content {
+    margin-bottom: 10px;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .content .title {
+    margin-bottom: 30px;
+  }
+  .detail_ks_pro .kind_of_room .detail_pro_item .detail_filing .list_text .flex-list {
+    padding: 12px 0;
+  }
+  .detail_ks_pro .contact_item .bann-contact {
+    display: none;
+  }
+  .detail_ks_pro .contact_item .col-contact {
+    width: 100%;
+  }
+  .detail_ks_pro .contact_item .col-contact .title-circle {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .detail_ks_pro .kind_of_room .slide_filing_pro .single_slide {
+    min-width: 260px;
+    max-width: 260px;
+  }
+}
+
+@media screen and (min-width: 992px){
+.banner {
+    height: auto !important;
+}}
+
+.detail_ks_pro .silde_traveler .single_traveler .banner img{
+  height: auto !important;
+}

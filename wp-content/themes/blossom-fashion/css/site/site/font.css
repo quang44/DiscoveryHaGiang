@@ -1,0 +1,56 @@
+/* Lưu các font family và đường dẫn */
+
+
+/* Nếu dùng  font của google thì import như này */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../../font/Roboto/Roboto-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto light;
+    src: url("../../../font/Roboto/Roboto-Light.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto medium;
+    src: url("../../../font/Roboto/Roboto-Medium.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto bold;
+    src: url("../../../font/Roboto/Roboto-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SVN-Cookies;
+    src: url("../../../font/SVN-Cookies.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SVN-Coco FY;
+    src: url("../../../font/SVN-Coco FY/SVN-Coco FY.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MTD-21-Cent;
+    src: url("../../../font/MTD 21 Cent.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MRCH NewYork;
+    src: url("../../../font/MRCH NewYork.ttf");
+    font-display: swap;
+}
+
